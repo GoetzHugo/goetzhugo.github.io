@@ -9,15 +9,22 @@ h1,h2,h3{
     margin: 0;
 }
 @font-face {
-    font-family: Nunito-Regular;
+    font-family: Roboto;
+    src: url(../font/Roboto-Medium.ttf);
 }
 p,h1,h2,a,legend,input,textarea,li,div{
-
+    font-family: Roboto, serif;
 }
 
-.casinoImg{
+.projetImg{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.projetImg img{
     max-width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-right: 1rem;
     scroll-snap-align: start;
 }
@@ -40,7 +47,9 @@ body {
     color : white;
     position: sticky;
     top: 0;
+    padding: 1rem;
     height: 54px;
+
 }
 .titre {
     font-size: 1.5rem;
@@ -123,8 +132,10 @@ article{
     padding: 10px;
     border-radius: 20px;
     border: #333355 solid 2px;
-    background-color: gray;
-    color: #333355;
+    background-color: #1c1c1c;
+    color: white;
+    box-shadow: 0 1px 2px #ffffff;
+
 }
 a > article:hover {
     border-color: #335;
