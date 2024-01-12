@@ -15,7 +15,16 @@ p,h1,h2,a,legend,input,textarea,li,div{
 
 }
 
+.casinoImg{
+    max-width: 100%;
+    border-radius: 5px;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+}
 
+h2{
+    text-align: center;
+}
 
 body {
     margin: 0;
