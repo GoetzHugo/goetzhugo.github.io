@@ -109,20 +109,6 @@ img[alt="burger"]{
     display: block;
 }
 
-/* banner */
-.banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 24vh;
-    background-size: cover;
-}
-.banner h1{
-    font-size: 3vw;
-    text-align: center;
-    color: white;
-    text-shadow: 1px 1px 0px black;
-}
 /* main */
 main{
     margin: 80px 15%;
