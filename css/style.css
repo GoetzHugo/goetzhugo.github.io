@@ -124,10 +124,14 @@ article{
     margin: 25px 0;
     padding: 10px;
     border-radius: 20px;
-    background-color: #3d3e42;
     color: white;
-
 }
+
+.profil article, .avenir article{
+    background-color: #3d3e42;
+}
+
+
 a > article:hover {
     border-color: #335;
 }
