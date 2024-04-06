@@ -15,7 +15,9 @@
   <div class="lienNavbar">
     <div> <a href="#">Mon Profil</a></div>
     <div> <a href="#cv">Mon CV</a></div>
+    <div> <a href="#competence">Mes Compétences</a></div>
     <div> <a href="#projet">Mes Projets</a></div>
+    <div> <a href="#ap">Mon Apprentissage Critique</a></div>
     <div> <a href="#avenir">Perspectives sur l'avenir</a></div>
   </div>
   <div class="burger">
@@ -23,7 +25,9 @@
     <div class="submenu-burger">
       <div> <a href="#">Mon Profil</a></div>
       <div> <a href="#cv">Mon CV</a></div>
+      <div> <a href="#competence">Mes Compétences</a></div>
       <div> <a href="#projet">Mes Projets</a></div>
+      <div> <a href="#ap">Mon Apprentissage Critique</a></div>
       <div> <a href="#avenir">Perspectives sur l'avenir</a></div>
     </div>
   </div>
@@ -47,107 +51,101 @@
         <li>Baccalauréat : Mathématiques/Physique-chimie, Option : Mathématiques Expertes, Lycée Notre Dame de la Merci</li>
       </ul>
       <br>
-      <h3>Mes Compétences</h3>
-      <ul>
-        <li>Languages de Programation: Java 17, Php 8, Html5/Css, Pl/Sql, Python</li>
-        <li>Méthodes Agiles</li>
-      </ul>
       <br id="cv">
     </article>
-  </section>
-  <section>
-    <article>
+    <article class="cv">
       <h2>Mon CV</h2>
       <br>
+      <button onclick="window.location.href= 'https://cdn.discordapp.com/attachments/1048945925827068034/1226266229946449930/HUGO_GOETZ-CV.pdf?ex=6624246c&is=6611af6c&hm=0b87be48ff0ab00114dc11fc9110570345bef3d7a57363beee74201950830409&'" class="btn" download>Télécharger mon CV ici</button>
+      <br>
       <p>
-        Vous pouvez
-        <a href="https://cdn.discordapp.com/attachments/1037693068901613578/1195475610886230166/HUGO_GOETZ-CV.pdf" class="btn" download>télécharger mon CV</a>
-        et me retrouver sur <a href="https://www.linkedin.com/in/hugo-goetz-a75272264/" target="_blank">LinkedIn</a> et <a href="https://github.com/GoetzHugo" target="_blank">GitHub</a>
+        Vous pouvez me retrouver sur
       </p>
-      <br id="projet">
+      <img src="img/linkedin.png" onclick="window.location.href= 'https://www.linkedin.com/in/hugo-goetz-a75272264/'" alt="" class="linkedin">
+      <img src="img/github.png" onclick="window.location.href= 'https://github.com/GoetzHugo'" alt="" class="github">
+      <br id="competence">
     </article>
   </section>
-  <section>
+  <section class="skills">
+    <h2>Mes Compétences</h2>
+    <div class="cards">
+      <div class="skill-card">
+        <img src="img/java.png" alt="">
+        <h2>Java</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/php.png" alt="">
+        <h2>Php</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/python.svg" alt="">
+        <h2>Python</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/css.svg" alt="">
+        <h2>CSS</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/git.svg" alt="">
+        <h2>GIT</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/html.svg" alt="">
+        <h2>HTML</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/js.svg" alt="">
+        <h2>JavaScript</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/linux-96.png" alt="">
+        <h2>Linux</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/sql.png" alt="">
+        <h2>SQL</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/oracle.png" alt="">
+        <h2>Oracle</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/mysql.svg" alt="">
+        <h2>MySQL</h2>
+      </div>
+    </div>
+    <br id="projet">
+  </section>
+  <section class="portfolio">
+    <h2>Mes Projets</h2>
+    <div class="portfolio-cards">
+      <div class="portfolio-card">
+        <img src="img/CasinoPortfolioCard.png" alt="">
+        <div class="overlay">
+          <h3>Machine à sous en ligne</h3>
+          <p>Site Web</p>
+          <a href="projets/machineASous.html">Voir plus -></a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="img/pokemonPortfolioCard.png" alt="">
+        <div class="overlay">
+          <h3>Site d'E-commerce de Pokémon et Objets Associés</h3>
+          <p>Site Web</p>
+          <a href="projets/e-commerce.html">Voir plus -></a>
+        </div>
+      </div>
+    </div>
+    <br id="ap">
+  </section>
+  <section class="ap">
     <article>
-      <h2>Mes Projets</h2>
-      <article>
-        <h2>Développement d'un Casino en Ligne - Machine à Sous</h2>
-        <br>
-        <div class="projetImg">
-          <img src="img/machineASous.png" alt="casinoImg">
-          <img src="img/stats.png" alt="casinoImg">
-        </div>
-        <br>
-        <p>
-          Dans le cadre de ma formation en Bachelor Universitaire Technologique en Informatique, j'ai participé au développement d'un casino en ligne. Ma contribution principale concernait le développement d'une machine à sous, intégrant à la fois des défis techniques et créatifs.
-        </p>
-        <br>
-        <h3>Mon Rôle et Responsabilités</h3>
-        <br>
-        <p>Au sein de mon équipe, j’ai été chargé de plusieurs aspects clés :</p>
-        <ul>
-          <li><strong>Analyse de Probabilités:</strong> J'ai appliqué des concepts mathématiques complexes pour équilibrer les probabilités de gains, assurant à la fois l'attrait pour les joueurs et la rentabilité.</li><br>
-          <li><strong>Développement de la Base de Données:</strong> J'ai conçu une base de données robuste pour gérer les utilisateurs, en utilisant des procédures et des triggers pour optimiser les performances.</li><br>
-          <li><strong>Création du Front-End:</strong> Inspiré par un design 'néon et or', j'ai développé l'interface utilisateur en HTML, CSS, et PHP, en me basant sur une maquette Figma.</li><br>
-          <li><strong>Intégration de l’Audio:</strong> J'ai incorporé des effets sonores et une musique de fond, enrichissant l'expérience utilisateur.</li><br>
-          <li><strong>Gestion du Changement:</strong> Je me suis adapté aux feedbacks des clients, modifiant divers aspects du jeu pour répondre à leurs attentes.</li>
-        </ul>
-        <br>
-        <h3>Méthodologie</h3>
-        <p>Le projet a été géré via une approche agile, en divisant le travail en sprints et en intégrant régulièrement les retours des clients, ce qui a permis une évolution constante du produit.</p>
-        <br>
-        <h3>Difficultés</h3>
-        <ul>
-          <li><strong>Équilibrage des Probabilités de la Machine à Sous:</strong> Un des défis majeurs a été de trouver un équilibre entre la rentabilité pour le casino et une probabilité de gain équitable pour les joueurs. J'ai relevé ce défi en réalisant des simulations et des ajustements, aboutissant à un algorithme qui respectait cet équilibre délicat.</li><br>
-
-          <li><strong>Développement de la Base de Données:</strong> La création d’une base de données performante et sécurisée, intégrant des procédures et des triggers complexes, a représenté un challenge significatif. J'ai surmonté cette difficulté en approfondissant mes connaissances en SQL et en m'adaptant aux besoins spécifiques du projet.</li><br>
-
-          <li><strong>Fidélité au Design dans le Front-End:</strong> Reproduire fidèlement la maquette élaborée sur Figma dans le code HTML, CSS et PHP a été complexe, notamment pour l'alignement précis des éléments visuels. Cette difficulté a été surmontée en expérimentant avec différents styles CSS et en ajustant méticuleusement le positionnement des éléments.</li><br>
-
-          <li><strong>Intégration Audio avec JavaScript:</strong> L'apprentissage de JavaScript pour l'intégration audio et la sélection de sons appropriés qui complétaient l'ambiance du jeu ont été des défis particuliers. J'ai relevé ces défis en me formant à travers des tutoriels en ligne et en expérimentant avec différents effets sonores.</li><br>
-
-          <li><strong>Gestion des Changements Clients:</strong> La gestion des modifications fréquentes demandées par les clients, telles que les changements de règles, de design, et d'animations, a été un défi majeur en termes de gestion de projet. J'ai répondu à ces demandes avec flexibilité et réactivité, en restant réaliste quant aux limites de ce qui était réalisable.</li><br>
-
-          <li><strong>Coordination d'Équipe et Communication:</strong> Travailler en équipe et maintenir une communication fluide, en particulier à distance, a représenté un défi notable. J'ai surmonté ce défi en utilisant des outils de gestion de projet en ligne et en organisant des réunions régulières pour assurer l'alignement et le suivi du projet.</li>
-        </ul>
-        <br>
-        <h3>Apprentissages et Évolutions</h3>
-        <p>Ce projet m'a permis de renforcer mes compétences en développement web, analyse de données, et gestion de projet. Travailler sur ce projet ambitieux a été une expérience précieuse, préparant le terrain pour ma future carrière dans le domaine informatique.</p>
-      </article>
-      <article>
-        <h2>Développement d'un Site de E-commerce de Pokémon et Objets Associés</h2>
-        <br>
-        <div class="projetImg">
-          <img src="img/pokemon.png" alt="eCommerceImg">
-          <img src="img/panier.png" alt="eCommerceImg">
-          <img src="img/commande.png" alt="eCommerceImg">
-          <img src="img/profil.png" alt="eCommerceImg">
-        </div>
-        <br>
-        <p>
-          Dans le cadre de ma formation en Bachelor Universitaire Technologique en Informatique, j'ai collaboré avec une équipe de 3 personnes pour concevoir un site e-commerce ludique et fonctionnel, spécialisé dans la vente de Pokémon et d'objets relatifs à l'univers Pokémon. L'objectif était de se concentrer sur les fonctionnalités plutôt que l'esthétique, en utilisant PHP, SQL et PL/SQL avec MySQL, et en suivant le modèle MVC.
-        </p>
-        <br>
-        <h3>Mon Rôle et Responsabilités</h3>
-        <ul>
-          <li><strong>Mise en place de la Base de Données:</strong> J'ai créé et intégré la base de données du site, en concevant des procédures, des triggers, et des vues pour simplifier le développement futur.</li><br>
-          <li><strong>Conception du Backend:</strong>Je me suis concentré sur tout ce qui touchait aux utilisateurs (inscription, connexion, administration, gestion des comptes) et la sécurisation de leurs informations, ainsi que sur la gestion des commandes.
-        </ul>
-        <br>
-        <h3>Difficultés</h3>
-        <ul>
-          <li><strong>Communication avec la Base de Données:</strong> Assurer une communication fluide et sécurisée entre le code et la base de données était un défi initial. J'ai utilisé des requêtes préparées PDO pour garantir la sécurité et l'efficacité.</li><br>
-          <li><strong>Sécurisation des Données:</strong> Protéger les informations sensibles des utilisateurs était crucial. J'ai implémenté un chiffrement robuste pour les mots de passe et assuré une vérification des données côté serveur.</li><br>
-          <li><strong>Restriction d'Accès:</strong> Empêcher l'accès non autorisé à certaines pages via l'URL ou les cookies demandait une attention particulière. J'ai renforcé les contrôles d'accès et utilisé des sessions pour gérer les permissions.</li><br>
-          <li><strong>Assurance du Bon Fonctionnement du Code:</strong> Le défi était de maintenir un code fonctionnel et efficace en toutes circonstances, pour lequel j'ai régulièrement testé et débogué le système.</li>
-        </ul>
-        <br>
-        <h3>Apprentissages et Évolutions</h3>
-        <p>Ce projet a renforcé mes compétences en développement web, en particulier dans la gestion de bases de données complexes et la sécurisation des applications web. J'ai appris l'importance d'une planification rigoureuse et de la flexibilité dans la résolution de problèmes imprévus. Travailler en équipe sur ce projet m'a également permis de développer mes compétences en communication et en coordination, essentielles pour la réussite d'un projet informatique.</p>
-        <br id="avenir">
-      </article>
+      <h2>Mon Apprentissage Critique</h2>
+      <br>
+      <button onclick="window.location.href='apprentissageCritique/apprentissageCritique.html'">Cliquez ici</button>
     </article>
   </section>
+  <br id="avenir">
   <section>
     <article>
       <h2>Perspectives sur l'avenir</h2>

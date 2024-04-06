@@ -12,7 +12,7 @@ h1,h2,h3{
     font-family: Roboto;
     src: url(../font/Roboto-Medium.ttf);
 }
-p,h1,h2,a,legend,input,textarea,li,div{
+p,h1,h2,h3,a,legend,input,textarea,li,div{
     font-family: Roboto, serif;
 }
 
@@ -29,14 +29,21 @@ p,h1,h2,a,legend,input,textarea,li,div{
     scroll-snap-align: start;
 }
 
-h2{
+h1{
+    font-size: 28px;
+}
+
+
+h2,h1{
     text-align: center;
 }
+
+
 
 body {
     margin: 0;
     padding : 0;
-    background-color: black;
+    background-color: #34353b;
 }
 /* navbar */
 .navbar {
@@ -49,6 +56,7 @@ body {
     top: 0;
     padding: 1rem;
     height: 54px;
+    z-index: 10;
 
 }
 .titre {
@@ -72,6 +80,7 @@ body {
 .submenu-burger a:hover{
     color: black;
     background-color: #eaebed;
+
     transition: all 600ms;
 }
 /* burger */
@@ -98,9 +107,7 @@ img[alt="burger"]{
     display: none;
     position: absolute;
     background-color: #335;
-    display: block;
-    box-shadow: 1px 5px 10px 0px rgba(0,0,0,.8);
-    display: none;
+    box-shadow: 1px 5px 10px 0 rgba(0,0,0,.8);
 }
 .submenu-burger a {
     text-decoration: none;
@@ -117,10 +124,8 @@ article{
     margin: 25px 0;
     padding: 10px;
     border-radius: 20px;
-    border: #333355 solid 2px;
-    background-color: #1c1c1c;
+    background-color: #3d3e42;
     color: white;
-    box-shadow: 0 1px 2px #ffffff;
 
 }
 a > article:hover {
@@ -135,13 +140,209 @@ main > a{
 }
 /* footer */
 footer {
-    margin-top: 20px;
+    margin-top: 30px;
     padding: 1rem;
     background-color: #181A1B;
     color: white;
     text-align: center;
 }
-@media screen and (max-width:720px) {
+
+.cv {
+    text-align: center;
+}
+
+.linkedin {
+    height: 5%;
+    width: 5%;
+}
+
+.github {
+    height: 5%;
+    width: 5%;
+}
+
+
+.ap article{
+    text-align: center;
+}
+
+.ap button, .cv button{
+    height: 48px;
+    width: auto;
+    background-color: transparent;
+    border: 2px solid #fec86a;
+    border-radius: 8px;
+    color: #fec86a;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    text-align: center;
+    text-decoration: none;
+}
+
+.ap button:hover, .cv button:hover{
+    background-color: #fec86a;
+    color: #34353b;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.skills h2 {
+    font-weight: 700;
+    color: #fbfbfb;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 2.5vh;
+}
+
+.skill-card {
+    height: 15vw;
+    width: 15vw;
+    background-color: #3d3e42;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+    background-color: #fec86a;
+}
+
+.skill-card img {
+    height: 5.0vw;
+    width: 5.0vw;
+    object-fit: contain;
+}
+
+.skill-card h2 {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fbfbfb;
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.portfolio h2 {
+    font-weight: 700;
+    color: #fbfbfb;
+}
+
+.portfolio-cards {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    gap: 2.5vh;
+}
+
+.portfolio-card {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    background-color: #3d3e42;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+}
+
+.portfolio-card img {
+    position: relative;
+    height: 30vw;
+    width: 30vw;
+    object-fit: cover;
+}
+
+.portfolio-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    height: 30vw;
+    width: 30vw;
+    background-color: #34353ba2;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.portfolio-card .overlay h3 {
+    color: #fbfbfb;
+    font-size: 24px;
+}
+
+.portfolio-card .overlay p {
+    color: #fbfbfb;
+    font-size: 16px;
+    text-align: center;
+}
+
+.portfolio-card .overlay button {
+    height: 36px;
+    width: 108px;
+    background-color: #fec86a;
+    border: 1px solid #fec86a;
+    border-radius: 8px;
+    color: #34353b;
+    font-size: 12px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.portfolio-card .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio a{
+    height: 40px;
+    line-height: 40px;
+    width: 120px;
+    background-color: #fec86a;
+    border: 1px solid #fec86a;
+    border-radius: 8px;
+    color: #34353b;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: center;
+    transition: all ease 0.5s;
+    text-decoration: none;
+}
+
+.portfolio a:hover{
+    background-color: #cc9e4e;
+}
+
+@media screen and (max-width:1200px) {
     .lienNavbar{
         display: none;
     }
