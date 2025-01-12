@@ -29,6 +29,28 @@ p,h1,h2,h3,a,legend,input,textarea,li,div{
     scroll-snap-align: start;
 }
 
+.projetImgRDU {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    height: 100%;
+}
+
+.projetImgRDU img{
+    max-width: 30%;
+    border-radius: 20px;
+    margin-right: 1rem;
+    scroll-snap-align: start;
+}
+
+.disclaimer {
+    font-size: 0.9em;
+    color: #d0d5d8;
+    margin: 10px 20px;
+}
+
 h1{
     font-size: 28px;
 }
@@ -45,7 +67,7 @@ body {
     padding : 0;
     background-color: #34353b;
 }
-/* navbar */
+
 .navbar {
     display :flex;
     justify-content: space-between;
@@ -83,7 +105,6 @@ body {
 
     transition: all 600ms;
 }
-/* burger */
 
 .burger {
     display: none;
@@ -114,9 +135,76 @@ img[alt="burger"]{
     color : white;
     padding: 1rem;
     display: block;
+    white-space: nowrap;
 }
 
-/* main */
+.menu-item {
+    position: relative;
+}
+
+.menu-item .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #335;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-item:hover .dropdown {
+    display: block;
+}
+
+.menu-item .dropdown a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.menu-item .dropdown a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
+
+.menu-item-burger {
+    position: relative;
+}
+
+.menu-item-burger .dropdown-burger {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    background-color: #335;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.menu-item-burger:hover .dropdown-burger {
+    display: block;
+}
+
+.menu-item-burger .dropdown-burger a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+}
+
+.menu-item-burger .dropdown-burger a:hover {
+    background-color: #f0f0f0;
+    color: black;
+}
+
 main{
     margin: 80px 15%;
 }
@@ -142,35 +230,127 @@ main > a{
     color: black !important;
     text-decoration: none;
 }
-/* footer */
-footer {
-    margin-top: 30px;
-    padding: 1rem;
-    background-color: #181A1B;
-    color: white;
+
+
+.footer {
+    background-color: #335;
+    color: #fff;
+    padding: 40px 20px;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+
+.footer-section {
+    flex: 1;
+    margin: 0 10px;
+    min-width: 200px;
+}
+
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    filter: brightness(1.5);
+}
+
+.footer-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.footer-copyright {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+        align-content: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    .footer-icons {
+        justify-content: center;
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.photo-profil {
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.cv {
+.photo-profil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.photo-profil h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #fbfbfb;
+}
+
+.cv-section {
+    background-color: #3d3e42;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.linkedin {
-    height: 5%;
-    width: 5%;
+.cv-container p {
+    font-size: 1rem;
+    color: #fbfbfb;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
-.github {
-    height: 5%;
-    width: 5%;
-}
-
-
-.ap article{
-    text-align: center;
-}
-
-.ap button, .cv button{
+.cv-btn {
     height: 48px;
     width: auto;
     background-color: transparent;
@@ -183,9 +363,35 @@ footer {
     text-decoration: none;
 }
 
-.ap button:hover, .cv button:hover{
+.cv-btn:hover{
     background-color: #fec86a;
     color: #34353b;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin {
+    height: 5%;
+    width: 5%;
+}
+
+.github {
+    height: 5%;
+    width: 5%;
+}
+
+.linkedin, .github {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.linkedin:hover, .github:hover {
+    transform: scale(1.1);
+}
+
+
+.ap article{
+    text-align: center;
 }
 
 .skills {
@@ -344,6 +550,11 @@ footer {
 
 .portfolio a:hover{
     background-color: #cc9e4e;
+}
+
+.rdu {
+    display: flex;
+    justify-content: center;
 }
 
 @media screen and (max-width:1200px) {

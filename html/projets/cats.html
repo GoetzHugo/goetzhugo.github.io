@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="../../css/style.css">
+    <meta charset="UTF-8">
+    <title>Projet - Stage en Entreprise</title>
+</head>
+
+<body>
+<nav class="navbar">
+    <div>
+        Portfolio Goetz Hugo
+    </div>
+    <div class="lienNavbar">
+        <div> <a href="../../index.html#">Mon Profil</a></div>
+        <div> <a href="../../index.html#cv">Mon CV</a></div>
+        <div> <a href="../../html#competence">Mes Compétences</a></div>
+        <div class="menu-item">
+            <a href="../../index.html#projet">Mes Projets</a>
+            <div class="dropdown">
+                <a href="../projets/machineASous.html">Machine à sous en ligne</a>
+                <a href="../projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+                <a href="../projets/cats.html">Stage au Crédit Agricole</a>
+                <a href="../projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+            </div>
+        </div>
+        <div> <a href='../apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
+        <div> <a href="../../index.html#avenir">Perspectives sur l'avenir</a></div>
+    </div>
+    <div class="burger">
+        <img src="../../img/burger.png" alt="burger">
+        <div class="submenu-burger">
+            <div> <a href="../../index.html#">Mon Profil</a></div>
+            <div> <a href="../../index.html#cv">Mon CV</a></div>
+            <div> <a href="../../index.html#competence">Mes Compétences</a></div>
+            <div class="menu-item-burger">
+                <a href="../../index.html#projet">Mes Projets</a>
+                <div class="dropdown-burger">
+                    <a href="../projets/machineASous.html">Machine à sous en ligne</a>
+                    <a href="../projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+                    <a href="../projets/cats.html">Stage au Crédit Agricole</a>
+                    <a href="../projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+                </div>
+            </div>
+            <div> <a href='../apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
+            <div> <a href="../../index.html#avenir">Perspectives sur l'avenir</a></div>
+        </div>
+    </div>
+</nav>
+<main>
+    <section>
+        <article>
+            <h2>Amélioration de la Console RDU chez Crédit Agricole Technologies & Services</h2>
+            <br>
+            <div class="projetImgRDU">
+                <img src="../../img/consoleRDU.png" alt="consoleRDU">
+            </div>
+            <p class="disclaimer">
+                Note : Les images et informations spécifiques à la Console des Référentiels des Usages (RDU) ne peuvent pas être diffusées pour des raisons de confidentialité et de respect des droits de propriété de Crédit Agricole Technologies & Services.
+            </p>
+            <br>
+            <p>
+                Lors de mon stage au Crédit Agricole Technologies & Services (CATS), j'ai contribué à l'amélioration de la Console des Référentiels des Usages (RDU), un outil essentiel pour la gestion des moyens d'authentification client. Mon rôle consistait à optimiser les fonctionnalités administratives, renforcer la sécurité de l'application et mettre en place un système de traçabilité avancé.
+            </p>
+            <br>
+            <h3>Mon Rôle et Responsabilités</h3>
+            <ul>
+                <li><strong>Mise à jour de l'image Docker:</strong> J'ai effectué la transition vers une image Debian plus sécurisée, en corrigeant les vulnérabilités et en optimisant les performances du projet.</li><br>
+                <li><strong>Traçabilité des actions administratives:</strong> J'ai développé un système de génération de logs métiers, intégrés dans la stack ELK (Elasticsearch, Logstash, Kibana), pour une meilleure analyse des opérations sensibles.</li><br>
+                <li><strong>Amélioration des fonctionnalités:</strong> J'ai rendu l'interface utilisateur plus intuitive et sécurisé les opérations de modification, création et suppression des données sensibles.</li>
+            </ul>
+            <br>
+            <h3>Difficultés</h3>
+            <ul>
+                <li><strong>Mise à jour Docker:</strong> La tentative de passage à une image Alpine a révélé des incompatibilités critiques avec les dépendances PHP. J'ai opté pour Debian, répondant aux exigences de sécurité tout en assurant la stabilité.</li><br>
+                <li><strong>Gestion des logs:</strong> L'intégration dans ELK nécessitait un formatage précis des logs et l'exclusion des données indésirables comme les logs Apache. Cela a impliqué des ajustements complexes dans le pipeline de traitement.</li><br>
+                <li><strong>Sécurisation des données:</strong> J'ai renforcé la validation côté serveur pour empêcher toute modification illégitime des clés primaires via des requêtes malveillantes.</li><br>
+                <li><strong>Gestion des dépendances interdépendantes avec Livewire:</strong> Intégrer des sélecteurs tri-dépendants dans une interface dynamique a demandé des recherches approfondies et une adaptation des scripts pour maintenir la cohérence des données.</li><br>
+                <li><strong>Configuration des middlewares:</strong> J'ai mis en place des middlewares adaptés pour sécuriser les routes et contrôler les accès, en m'appuyant sur une compréhension approfondie des politiques de gestion des sessions et des autorisations.</li>
+            </ul>
+            <br>
+            <h3>Méthodologie</h3>
+            <p>
+                En travaillant dans un environnement agile, j’ai pleinement intégré les pratiques Scrum. J’ai participé aux cérémonies clés telles que la planification de sprint, les mêlées quotidiennes et les rétrospectives. Ces réunions ont permis d’assurer un suivi efficace des objectifs, de maintenir une bonne communication au sein de l’équipe et d’adapter rapidement le travail aux retours des parties prenantes.
+            </p>
+            <p>
+                Mon implication dans ces cérémonies a favorisé une organisation fluide des tâches et renforcé la cohésion au sein de la squad Identification/Authentification. Cela a également permis d’identifier rapidement les obstacles potentiels et d’y apporter des solutions collaboratives.
+            </p>
+            <br>
+            <h3>Apprentissages et Évolutions</h3>
+            <p>
+                Ce projet m'a permis d'approfondir mes compétences en développement web (Laravel, Livewire, Vue.js), en gestion des conteneurs (Docker, Kubernetes) et en analyse de logs (ELK). J'ai également acquis une expérience précieuse dans la gestion des pipelines CI/CD, en participant à la configuration et au déploiement de projets en utilisant GitLab. Ces pratiques m'ont initié aux concepts de DevSecOps, intégrant la sécurité dès les premières étapes du développement pour garantir des livraisons fiables et conformes aux exigences.
+            </p>
+        </article>
+    </section>
+</main>
+</body>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>ME CONTACTER</h3>
+            <p>+33 7 82 38 78 02</p>
+            <p>hugo.goetz@gmail.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>MES RÉSEAUX</h3>
+            <div class="footer-icons">
+                <a href="https://www.linkedin.com/in/hugo-goetz-a75272264/" target="_blank">
+                    <img src="../../img/linkedin.png" alt="LinkedIn" class="footer-icon">
+                </a>
+                <a href="https://github.com/GoetzHugo" target="_blank">
+                    <img src="../../img/github.png" alt="GitHub" class="footer-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        © 2024 GOETZ HUGO
+    </div>
+</footer>
+
+</html>

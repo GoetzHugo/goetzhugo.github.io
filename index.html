@@ -16,8 +16,16 @@
     <div> <a href="#">Mon Profil</a></div>
     <div> <a href="#cv">Mon CV</a></div>
     <div> <a href="#competence">Mes Compétences</a></div>
-    <div> <a href="#projet">Mes Projets</a></div>
-    <div> <a href="#ap">Mon Apprentissage Critique</a></div>
+    <div class="menu-item">
+      <a href="#projet">Mes Projets</a>
+      <div class="dropdown">
+        <a href="html/projets/machineASous.html">Machine à sous en ligne</a>
+        <a href="html/projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+        <a href="html/projets/cats.html">Stage au Crédit Agricole</a>
+        <a href="html/projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+      </div>
+    </div>
+    <div> <a href='html/apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
     <div> <a href="#avenir">Perspectives sur l'avenir</a></div>
   </div>
   <div class="burger">
@@ -26,8 +34,16 @@
       <div> <a href="#">Mon Profil</a></div>
       <div> <a href="#cv">Mon CV</a></div>
       <div> <a href="#competence">Mes Compétences</a></div>
-      <div> <a href="#projet">Mes Projets</a></div>
-      <div> <a href="#ap">Mon Apprentissage Critique</a></div>
+      <div class="menu-item-burger">
+        <a href="#projet">Mes Projets</a>
+        <div class="dropdown-burger">
+          <a href="html/projets/machineASous.html">Machine à sous en ligne</a>
+          <a href="html/projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+          <a href="html/projets/cats.html">Stage au Crédit Agricole</a>
+          <a href="html/projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+        </div>
+      </div>
+      <div> <a href='html/apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
       <div> <a href="#avenir">Perspectives sur l'avenir</a></div>
     </div>
   </div>
@@ -35,12 +51,15 @@
 <main>
   <section class="profil">
     <article>
-      <h2>Mon Profil</h2>
+      <div class="photo-profil">
+        <img src="img/Photo-Profil-Hugo.jpeg" alt="Photo de Hugo">
+        <h2>Hugo Goetz</h2>
+      </div>
       <br>
       <p>
-        Bonjour je suis Hugo.<br><br>
-        Actuellement en 2ème année de BUT informatique à l'IUT de Montpellier. Je suis passionné par tout ce qui touche à l'informatique et je suis à la recherche d'une alternance pour enrichir mes compétences et avancer dans ma carrière dans ce domaine dynamique.<br><br>
-        Je me distingue par mon approche méticuleuse et mon engagement profond envers mes projets et mes études. Je suis reconnu pour ma fiabilité, ma capacité à travailler en équipe, et mon souci du détail, qualités que je m'efforce d'appliquer tant dans mes projets académiques que personnels.<br><br>
+        Bienvenue sur mon portfolio ! Je suis Hugo.<br><br>
+        Actuellement en 3ème année de BUT informatique à l'IUT de Montpellier. Je suis passionné par tout ce qui touche à l'informatique et je suis à la recherche d'une alternance ou un stage pour enrichir mes compétences et avancer dans ma carrière dans ce domaine dynamique.<br><br>
+        Je me distingue par mon approche méticuleuse et mon engagement profond envers mes projets et mes études. Je suis reconnu pour ma fiabilité, ma capacité à travailler en équipe et mon souci du détail, qualités que je m'efforce d'appliquer tant dans mes projets académiques que personnels.<br><br>
         En dehors de l'informatique, je suis très actif et m'investis dans diverses activités sportives telles que la course, la musculation et le volley-ball. Ces activités sont cruciales pour moi, non seulement pour rester en forme, mais également pour cultiver l'esprit d'équipe et la discipline, des valeurs que je transpose dans ma vie professionnelle et académique.<br><br>
         Mon objectif est de construire un parcours professionnel enrichissant, en combinant ma passion pour l'informatique avec un engagement solide envers le bien-être collectif.
       </p>
@@ -49,24 +68,12 @@
       <ul>
         <li>Bachelor universitaire de technologie en Informatique, IUT de Montpellier-Sète</li>
         <li>Baccalauréat : Mathématiques/Physique-chimie, Option : Mathématiques Expertes, Lycée Notre Dame de la Merci</li>
+        <br id="competence">
       </ul>
       <br>
-      <br id="cv">
     </article>
   </section>
   <section>
-    <article class="cv">
-      <h2>Mon CV</h2>
-      <br>
-      <button onclick="window.location.href= 'https://cdn.discordapp.com/attachments/1048945925827068034/1226266229946449930/HUGO_GOETZ-CV.pdf?ex=6624246c&is=6611af6c&hm=0b87be48ff0ab00114dc11fc9110570345bef3d7a57363beee74201950830409&'" class="btn" download>Télécharger mon CV ici</button>
-      <br>
-      <p>
-        Vous pouvez me retrouver sur
-      </p>
-      <img src="img/linkedin.png" onclick="window.location.href= 'https://www.linkedin.com/in/hugo-goetz-a75272264/'" alt="" class="linkedin">
-      <img src="img/github.png" onclick="window.location.href= 'https://github.com/GoetzHugo'" alt="" class="github">
-      <br id="competence">
-    </article>
   </section>
   <section class="skills">
     <h2>Mes Compétences</h2>
@@ -78,6 +85,14 @@
       <div class="skill-card">
         <img src="img/php.png" alt="">
         <h2>Php</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/laravel.png" alt="">
+        <h2>Laravel</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/symfony.png" alt="">
+        <h2>Symfony</h2>
       </div>
       <div class="skill-card">
         <img src="img/python.svg" alt="">
@@ -100,6 +115,10 @@
         <h2>JavaScript</h2>
       </div>
       <div class="skill-card">
+        <img src="img/vueJs.png" alt="">
+        <h2>vueJS</h2>
+      </div>
+      <div class="skill-card">
         <img src="img/linux-96.png" alt="">
         <h2>Linux</h2>
       </div>
@@ -115,18 +134,30 @@
         <img src="img/mysql.svg" alt="">
         <h2>MySQL</h2>
       </div>
+      <div class="skill-card">
+        <img src="img/noSQL.png" alt="">
+        <h2>NoSQL</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/cassandra.png" alt="">
+        <h2>Cassandra</h2>
+      </div>
+      <div class="skill-card">
+        <img src="img/mongodb.png" alt="">
+        <h2>MongoDB</h2>
+      </div>
+      <br id="projet">
     </div>
-    <br id="projet">
   </section>
   <section class="portfolio">
     <h2>Mes Projets</h2>
     <div class="portfolio-cards">
       <div class="portfolio-card">
-        <img src="img/CasinoPortfolioCard.png" alt="">
+        <img src="img/casinoPortfolioCard.png" alt="">
         <div class="overlay">
           <h3>Machine à sous en ligne</h3>
           <p>Site Web</p>
-          <a href="projets/machineASous.html">Voir plus -></a>
+          <a href="html/projets/machineASous.html">Voir plus -></a>
         </div>
       </div>
       <div class="portfolio-card">
@@ -134,18 +165,29 @@
         <div class="overlay">
           <h3>Site d'E-commerce de Pokémon et Objets Associés</h3>
           <p>Site Web</p>
-          <a href="projets/e-commerce.html">Voir plus -></a>
+          <a href="html/projets/e-commerce.html">Voir plus -></a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="img/creditAgricole.jpg" alt="">
+        <div class="overlay">
+          <h3>Contribution à l'Amélioration et à la Traçabilité de la
+            Console des Référentiels des Usages en PHP</h3>
+          <p>Stage Crédit Agricole Technologies &
+            Services</p>
+          <a href="html/projets/cats.html">Voir plus -></a>
+        </div>
+      </div>
+      <div class="portfolio-card">
+        <img src="img/plongerIllustration.jpeg" alt="">
+        <div class="overlay">
+          <h3>Site d'E-commerce pour un Club de Plonger</h3>
+          <p>Site Web</p>
+          <a href="html/projets/e-commercePlonger.html">Voir plus -></a>
         </div>
       </div>
     </div>
     <br id="ap">
-  </section>
-  <section class="ap">
-    <article>
-      <h2>Mon Apprentissage Critique</h2>
-      <br>
-      <button onclick="window.location.href='apprentissageCritique/apprentissageCritique.html'">Cliquez ici</button>
-    </article>
   </section>
   <br id="avenir">
   <section class="avenir">
@@ -163,12 +205,42 @@
         <br><br>
         Je suis déterminé à jouer un rôle actif dans l'avancement de la technologie et à laisser une empreinte positive dans ce domaine passionnant.
       </p>
+      <br id="cv">
     </article>
+  </section>
+  <section class="cv-section">
+    <div class="cv-container">
+      <p>
+        Merci d'avoir parcouru mon portfolio. Vous souhaitez en savoir plus sur mon parcours ? Mon CV est disponible en téléchargement via le bouton ci-dessous.
+      </p>
+      <button onclick="window.location.href='pdf/HUGO_GOETZ-CV.pdf'" class="cv-btn" download>
+        TÉLÉCHARGER MON CV
+      </button>
+    </div>
   </section>
 </main>
 </body>
-<footer>
-  <p>© 2024 GOETZ HUGO</p>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>ME CONTACTER</h3>
+      <p>+33 7 82 38 78 02</p>
+      <p>hugo.goetz@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <h3>MES RÉSEAUX</h3>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/hugo-goetz-a75272264/" target="_blank">
+          <img src="img/linkedin.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="https://github.com/GoetzHugo" target="_blank">
+          <img src="img/github.png" alt="GitHub" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2024 GOETZ HUGO
+  </div>
 </footer>
-
 </html>

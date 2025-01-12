@@ -2,7 +2,7 @@
 <html lang="fr">
 
 <head>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../css/style.css">
   <meta charset="UTF-8">
   <title></title>
 </head>
@@ -13,22 +13,38 @@
     Portfolio Goetz Hugo
   </div>
   <div class="lienNavbar">
-    <div> <a href="../index.html#">Mon Profil</a></div>
-    <div> <a href="../index.html#cv">Mon CV</a></div>
-    <div> <a href="../index.html#competence">Mes Compétences</a></div>
-    <div> <a href="../index.html#projet">Mes Projets</a></div>
-    <div> <a href="../index.html#ap">Mon Apprentissage Critique</a></div>
-    <div> <a href="../index.html#avenir">Perspectives sur l'avenir</a></div>
+    <div> <a href="../../index.html#">Mon Profil</a></div>
+    <div> <a href="../../index.html#cv">Mon CV</a></div>
+    <div> <a href="../../html#competence">Mes Compétences</a></div>
+    <div class="menu-item">
+      <a href="../../index.html#projet">Mes Projets</a>
+      <div class="dropdown">
+        <a href="../projets/machineASous.html">Machine à sous en ligne</a>
+        <a href="../projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+        <a href="../projets/cats.html">Stage au Crédit Agricole</a>
+        <a href="../projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+      </div>
+    </div>
+    <div> <a href='../apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
+    <div> <a href="../../index.html#avenir">Perspectives sur l'avenir</a></div>
   </div>
   <div class="burger">
-    <img src="../img/burger.png" alt="burger">
+    <img src="../../img/burger.png" alt="burger">
     <div class="submenu-burger">
-      <div> <a href="../index.html#">Mon Profil</a></div>
-      <div> <a href="../index.html#cv">Mon CV</a></div>
-      <div> <a href="../index.html#competence">Mes Compétences</a></div>
-      <div> <a href="../index.html#projet">Mes Projets</a></div>
-      <div> <a href="../index.html#ap">Mon Apprentissage Critique</a></div>
-      <div> <a href="../index.html#avenir">Perspectives sur l'avenir</a></div>
+      <div> <a href="../../index.html#">Mon Profil</a></div>
+      <div> <a href="../../index.html#cv">Mon CV</a></div>
+      <div> <a href="../../index.html#competence">Mes Compétences</a></div>
+      <div class="menu-item-burger">
+        <a href="../../index.html#projet">Mes Projets</a>
+        <div class="dropdown-burger">
+          <a href="../projets/machineASous.html">Machine à sous en ligne</a>
+          <a href="../projets/e-commerce.html">Site d'E-commerce de Pokémon</a>
+          <a href="../projets/cats.html">Stage au Crédit Agricole</a>
+          <a href="../projets/e-commercePlonger.html">Site d'E-commerce de Plongée</a>
+        </div>
+      </div>
+      <div> <a href='../apprentissageCritique/apprentissageCritique.html'>Mon Apprentissage Critique</a></div>
+      <div> <a href="../../index.html#avenir">Perspectives sur l'avenir</a></div>
     </div>
   </div>
 </nav>
@@ -137,8 +153,27 @@
   </section>
 </main>
 </body>
-<footer>
-  <p>© 2024 GOETZ HUGO</p>
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-section">
+      <h3>ME CONTACTER</h3>
+      <p>+33 7 82 38 78 02</p>
+      <p>hugo.goetz@gmail.com</p>
+    </div>
+    <div class="footer-section">
+      <h3>MES RÉSEAUX</h3>
+      <div class="footer-icons">
+        <a href="https://www.linkedin.com/in/hugo-goetz-a75272264/" target="_blank">
+          <img src="../../img/linkedin.png" alt="LinkedIn" class="footer-icon">
+        </a>
+        <a href="https://github.com/GoetzHugo" target="_blank">
+          <img src="../../img/github.png" alt="GitHub" class="footer-icon">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2024 GOETZ HUGO
+  </div>
 </footer>
-
 </html>
